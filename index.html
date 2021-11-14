@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" unselectable="on" onselectstart="return false;" onmousedown="return false;">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="src/css/styles.css" />
+
+    <!-- =====BOX ICONS===== -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+
+    <title>Sudhamsh Undavalli</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ec78c64bcf.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+
+<!-- <body> -->
+
+<body>
+    <div id="preloader">
+        <div id="loading-animation">
+            <div class="loader">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Sudhamsh</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">Education</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#project" class="nav__link">Projects</a>
+                    </li>
+                    <!-- <li class="nav__item">
+                        <a href="#contact" class="nav__link">Ping Me</a>
+                    </li> -->
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <!-- Rounded switch -->
+                    <li class="nav__item">
+                        <label class="switch" onClick="theme_switcher()">
+                            <input type="checkbox" id="mode-setter" checked="true" />
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-menu"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main" onclick="pickColor()">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">
+                    Hello, world!<br />I'm
+                    <span class="home__title-color">Sudhamsh</span><br>
+                    <span class="home__subtitle1">
+                        <span class="home__subtitle-color">F</span>ull Stack Developer,<br>
+                    </span>
+                    <span class="home__subtitle2">
+                        <span class="home__subtitle-color">A</span>ws    &
+                    <span class="home__subtitle-color">D</span>ata Science
+                    <span class="home__subtitle-color">E</span>nthusiast
+                    </span>
+                    </span>
+                </h1>
+
+                <!-- <a href="#contact" class="button">Contact</a> &nbsp;&nbsp; -->
+                <a href="https://github.com/TipsyCracker/MyResume/blob/main/Sudhamsh%20Undavalli.pdf" target="_blank" class="button">My Resume</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/sudhamsh-undavalli-b90628125/" target="_blank" class="home__social-icon"><i
+                        class="bx bxl-linkedin-square"></i></a>
+                <a href="https://www.instagram.com/sudhamsh_undavalli/" target="_blank" class="home__social-icon"><i
+                        class="bx bxl-instagram-alt"></i></a>
+                <a href="https://github.com/TipsyCracker" target="_blank" class="home__social-icon"><i
+                        class="bx bxl-github"></i></a>
+                <a href="mailto:srisudhamsh.u@gmail.com" target="_blank" class="home__social-icon"><i
+                        class="bx bx-mail-send"></i></a>
+            </div>
+
+            <div class="home__img">
+                <img class="home_image" src="assets/img/sudh.jfif" alt="" />
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <!-- <div id="colour-picker">hi colour me</div> -->
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.jpg" alt="" />
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">Dev Name: TipsyCracker</h2>
+                    <p class="about__text2"> “ Code is like humor. <br> When you have to explain it, it’s bad.”</p>
+                    <p class="about__text2"><span class="iconify ticks" data-icon="mdi:checkbox-blank-circle" data-inline="false"></span> 💻 Data Science Enthusiast
+                    </p>
+                    <p class="about__text2"><span class="iconify ticks" data-icon="mdi:checkbox-blank-circle" data-inline="false"></span> 💼 Looking for Interships related to </p>
+                    <p class="about__text2">&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;<span class="iconify ticks" data-icon="la:dot-circle-solid" data-inline="false"></span> Full stack Development</p>
+                    <p class="about__text2">&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;<span class="iconify ticks" data-icon="la:dot-circle-solid" data-inline="false"></span> Data Science Projects</p>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!--===== Education =====-->
+        <section class="education section" id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="education__container bd-grid">
+                <div class="education__controller_left">
+                    <h2 class="education__subtitle">Undergraduate Studies</h2>
+
+                    <!-- SRM -->
+                    <div class="education__data">
+                        <div class="education__logo">
+                            <img src="assets/img/REVA-University.jpg" width="145px" alt="srm logo">
+                        </div>
+                        <div class="education__names">
+                            <h2 class="education__name">Reva University <br> Banglore,Karnataka</h2>
+                            <br>
+                            <div class="education__details">
+                                <i>2019-2023</i>
+                                <br>B.Tech Computer Science
+                            </div>
+                            <a href="https://goo.gl/maps/4VNtW7KdpwAETnNo6" target="_blank">
+                                <i class='fas fa-location-arrow'></i>
+                            </a>
+                            <a href="https://reva.edu.in/" target="_blank">
+                                <i class='fas fa-globe'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="education__controller_right">
+                    <h2 class="education__subtitle">Senior Secondary Studies</h2>
+
+                    <!-- DAV -->
+                    <div class="education__data">
+                        <div class="education__logo">
+                            <img src="assets/img/dav.png" alt="srm logo">
+                        </div>
+                        <div class="education__names">
+                            <h2 class="education__name">DAV Public School<br>Safilguda</h2>
+                            <br>
+                            <div class="education__details">
+                                <i>2017-2019</i>
+                                <br> MPC+IP (CBSE)
+                            </div>
+                            <a href="https://www.google.com/maps/place/DAV+Public+School/@17.463957,78.5419732,17z/data=!3m1!4b1!4m5!3m4!1s0x3bcb9ba6b3ffffff:0x69ecdcd84620fe65!8m2!3d17.463957!4d78.5441619" target="_blank">
+                                <i class='fas fa-location-arrow'></i>
+                            </a>
+                            <a href="http://davsafilguda.edu.in/" target="_blank">
+                                <i class='fas fa-globe'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Technical Skills</h2>
+
+                    <!-- python -->
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <!-- <i class='bx bx-copyright skills__icon'></i> -->
+                            <span class="iconify skill-logo" data-icon="bx-bxl-python" data-inline="false"></span>
+                            <span class="skills__name">Python</span>
+                        </div>
+                        <!-- <div class="skills__bar skills__python"></div> -->
+                        <div>
+                            <!-- <span class="skills__percentage">8.0</span> -->
+                        </div>
+                    </div>
+
+                    <!-- Java -->
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <!-- <i class='bx bx-copyright skills__icon'></i> -->
+                            <span class="iconify skill-logo" data-icon="simple-icons:javascript" data-inline="false"></span>
+                            <span class="skills__name">Javascript</span>
+                        </div>
+                        <!-- <div class="skills__bar skills__Java"></div> -->
+                        <div>
+                            <!-- <span class="skills__percentage">7.5</span> -->
+                        </div>
+                    </div>
+
+                    <!-- C -->
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="iconify skill-logo" data-icon="emojione-monotone:letter-r" data-inline="false"></span>
+                            <span class="skills__name">R</span>
+                        </div>
+                        <!-- <div class="skills__bar skills__C"></div> -->
+                        <div>
+                            <!-- <span class="skills__percentage">7.0</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="skills__mini_holder">
+                        <!-- Shell -->
+                        <div class="skills__data__mini">
+                            <div class="skills__names">
+                                <!-- <i class="bx bxs-terminal skills__icon iconify skill-logo"></i> -->
+                                <span class="iconify" data-icon="ion-terminal" data-inline="false"></span>
+                            </div>
+                        </div>
+
+                        <!-- C++ -->
+                        <div class="skills__data__mini">
+                            <div class="skills__names">
+                                <!-- <i class='bx bx-copyright skills__icon'></i> -->
+                                <span class="iconify skill-logo" data-icon="bx-bxl-c-plus-plus" data-inline="false"></span>
+                            </div>
+                        </div>
+
+
+                        <!-- HTML5 -->
+                        <div class="skills__data__mini">
+                            <div class="skills__names">
+                                <!-- <i class='bx bx-copyright skills__icon'></i> -->
+                                <!-- <span class="iconify skill-logo" data-icon="simple-icons:HTML5" data-inline="false"></span> -->
+                                <span class="iconify skill-logo" data-icon="ion-logo-html5" data-inline="false"></span>
+                            </div>
+                        </div>
+
+                        <!-- CSS3 -->
+                        <div class="skills__data__mini">
+                            <div class="skills__names">
+                                <!-- <i class='bx bx-copyright skills__icon'></i> -->
+                                <span class="iconify" data-icon="ion-logo-css3" data-inline="false"></span>
+                            </div>
+                        </div>
+
+                        <!-- git -->
+                        <div class="skills__data__mini">
+                            <div class="skills__names">
+                                <!-- <i class='bx bx-copyright skills__icon'></i> -->
+                                <span class="iconify" data-icon="mdi-git" data-inline="false"></span>
+                            </div>
+                        </div>
+
+                        <!-- Nodejs -->
+                        <div class="skills__data__mini">
+                            <div class="skills__names">
+                                <!-- <i class='bx bx-copyright skills__icon'></i> -->
+                                <span class="iconify" data-icon="simple-icons:nodejs" data-inline="false"></span>
+                            </div>
+                        </div>
+
+                        <!-- react -->
+                        <div class="skills__data__mini">
+                            <div class="skills__names">
+                                <!-- <i class='bx bx-copyright skills__icon'></i> -->
+                                <span class="iconify" data-icon="simple-icons:react" data-inline="false"></span>
+                            </div>
+                        </div>
+
+                        <!-- tailwind -->
+                        <div class="skills__data__mini">
+                            <div class="skills__names">
+                                <!-- <i class='bx bx-copyright skills__icon'></i> -->
+                                <span class="iconify" data-icon="mdi:tailwind" data-inline="false"></span>
+                            </div>
+                        </div>
+
+                        <!-- tailwind -->
+                        <div class="skills__data__mini">
+                            <div class="skills__names">
+                                <!-- <i class='bx bx-copyright skills__icon'></i> -->
+                                <span class="iconify" data-icon="file-icons:go" data-inline="false"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== project =====-->
+        <section class="project section" id="project">
+            <h2 class="section-title2">Projects</h2>
+            <div class="project__container">
+                <a class="project__links" href="https://github.com/TipsyCracker/POS-WATCH.git" target="_blank">
+                    <div class="project__data">
+                        <div class="project__names">
+                            <span class="project__name">Pos-Watch
+                                <div class="info">
+                                    portable pos tech on smart watch,mobile. 
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project__links" href="https://devfolio.co/submissions/reva-lot-cab-461f" target="_blank">
+                    <div class="project__data">
+                        <div class="project__names">
+                            <span class="project__name">Reva Common CAB network
+                                <div class="info">
+                                   web app which one can book a cab with his unknown college friend
+                                    who is trying to go to same destination at same time so that their is no cost issues.
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project__links" href="@" target="_blank">
+                    <div class="project__data">
+                        <div class="project__names">
+                            <span class="project__name">GPS Automobile Indication 
+                                <div class="info">
+                                    A Google maps based tech algorithm that turns on car indicators automatically
+                                     before taking the turn. 
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project__links" href="https://github.com/ruhend/garudafy" target="_blank">
+                    <div class="project__data">
+                        <div class="project__names">
+                            <span class="project__name">javaDroid
+                                <div class="info">
+                                    A java netbeans developed emulator android.
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+             <!-- <a class="project__links" href="https://github.com/ruhend/profanity-censor" target="_blank">
+                    <div class="project__data">
+                        <div class="project__names">
+                            <span class="project__name">Profanity Censor
+                                <div class="info">
+                                    A Java program that detects and censors non-children friendly language based ona
+                                    predefined database(CSV).
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project__links" href="https://github.com/ruhend/Backtracking-Sudoku-Solver" target="_blank">
+                    <div class="project__data">
+                        <div class="project__names">
+                            <span class="project__name">Sudoku Solver
+                                <div class="info">
+                                    A C++ program to autosolve any difficulty level Sudoku using backtracking algorithm.
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </a>--> 
+          </div>
+        </section>
+
+        <!-- ===== Badges and Certifications ======
+        <section class="project section" id="project">
+            <h2 class="section-title">Badges</h2>
+            <div class="badge__container">
+
+                <div data-iframe-width="300" data-iframe-height="350" class="badge"
+                    data-share-badge-id="44f19cc1-5672-475b-8266-1f0afd84430f"
+                    data-share-badge-host="https://www.credly.com/%22%3E">
+                </div>
+                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                <div data-iframe-width="300" data-iframe-height="300" class="badge"
+                    data-share-badge-id="44f19cc1-5672-475b-8266-1f0afd84430f"
+                    data-share-badge-host="https://www.credly.com/%22%3E"></div>
+            </div>
+            <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+            </div>
+        </section> -->
+        <!--===== CONTACT =====-->
+        <!-- <section class="contact section" id="contact">
+            <h2 class="section-title">Ping Me</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="POST" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input" />
+                    <input type="mail" placeholder="Email" class="contact__input" />
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input" style="resize: none"></textarea>
+                    <input type="button" value="Submit" class="contact__button button" />
+                </form>
+            </div>
+        </section> -->
+
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="home__subtitle2">Sudhamsh Undavalli</p>
+        <p class="education__subtitle">@TipsyCracker</p>
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/sudhamsh-undavalli-b90628125/" target="_blank" class="footer__social-icon"><i
+                    class="bx bxl-linkedin-square"></i></a>
+            <a href="https://www.instagram.com/sudhamsh_undavalli/" target="_blank" class="footer__social-icon"><i
+                    class="bx bxl-instagram-alt"></i></a>
+            <a href="https://github.com/TipsyCracker" target="_blank" class="footer__social-icon"><i
+                    class="bx bxl-github"></i></a>
+            <a href="mailto:srisudhamsh.u@gmail.com" target="_blank" class="footer__social-icon"><i
+                    class="bx bx-mail-send"></i></a>
+            <div class="page__counter">
+                <div class="viewcountdiv">
+                    <img class="viewcount" src="https://hitwebcounter.com/counter/counter.php?page=7842963&style=0006&nbdigits=5&type=page&initCount=0" />
+                </div>
+            </div>
+        </div>
+        <p class="footer__text">&#169; 2023 copyright all right reserved</p>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== ANIMATION LOADING ======-->
+    <script type="text/javascript" src="src/js/loading-animation.js"></script>
+
+    <!--===== MAIN JS =====-->
+    <script type="text/javascript" src="src/js/sr-bottom.js"></script>
+    <script type="text/javascript" src="src/js/sr-left.js"></script>
+    <script type="text/javascript" src="src/js/sr-right.js"></script>
+    <script type="text/javascript" src="src/js/sr-top.js"></script>
+    <script type="text/javascript" src="src/js/menu.js"></script>
+    <script type="text/javascript" src="src/js/themer.js"></script>
+    <script type="text/javascript" src="src/js/dark-theme.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+
+</html>
